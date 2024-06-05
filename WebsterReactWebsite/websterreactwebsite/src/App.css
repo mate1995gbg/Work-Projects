@@ -15,13 +15,46 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-navbar {
+  width: 100%;
+  height: 10vh; 
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-link-style {
+  color:azure;
+
+}
+.navbar-link-style:link {
+  color:azure;
+  
+}
+.navbar-link-style:visited {
+  color:azure;
+  
+}
+.navbar-link-style:active {
+  color:#8080ff;
+  
+}
+.navbar-link-style:hover {
+  color:#8080ff;
+  
+}
+.link-div {
+  margin: 5vh;
 }
 
 .App-link {
@@ -35,4 +68,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.infocell-style {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 95%;
+  padding: 1%;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+.infocell-header {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  border-radius: 60px;
+}
+.introbody-text {
+  color: lightgray;
+  font-family: sans-serif;
+}
+.skillsbody {
+  display:flex;
+  flex-direction: column;
+  background-color:  #282c34;
+  width: 90%;
+  height: fit-content;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  margin:auto;
+  margin-top: 20px;
+  padding: 2%;
 }

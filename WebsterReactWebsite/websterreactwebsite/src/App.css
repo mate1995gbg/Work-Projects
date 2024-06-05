@@ -34,15 +34,19 @@
 }
 
 .navbar-link-style {
-  color:azure;
+  color:#8080ff;
+  font-family: 'Segoe UI';
+  font-size: 1.2rem; 
+  text-decoration: none;
+  transition: text-shadow 0.3s ease; 
 
 }
 .navbar-link-style:link {
-  color:azure;
+  color:#8080ff;
   
 }
 .navbar-link-style:visited {
-  color:azure;
+  color:#8080ff;
   
 }
 .navbar-link-style:active {
@@ -51,6 +55,7 @@
 }
 .navbar-link-style:hover {
   color:#8080ff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   
 }
 .link-div {

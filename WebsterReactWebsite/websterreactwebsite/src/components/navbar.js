@@ -4,16 +4,16 @@ function Navbar () {
     return (
         <div className="App-navbar">
             <div className="link-div">
-                <Link to="/Services" className='navbar-link-style'>Tjänster</Link>
+                <a href="#services" className='navbar-link-style'>Tjänster</a>
             </div>
             <div className="link-div">
-                <Link to="/About" className='navbar-link-style'>Om Oss</Link>
+                <a href="#about" className='navbar-link-style'>Om Oss</a>
             </div>
             <div className="link-div">
-                <Link to="/Contact" className='navbar-link-style'>Kontakt</Link>
+                <a href="#contact" className='navbar-link-style'>Kontakt</a>
             </div>
             <div className="link-div">
-                <Link to="/PreviousWork" className='navbar-link-style'>Tidigare Projekt</Link>
+                <a href="#previouswork" className='navbar-link-style'>Tidigare Projekt</a>
             </div>
         </div>
     );

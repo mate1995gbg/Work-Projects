@@ -1,27 +1,34 @@
 import './App.css';
+import logo from '../src/svg/logo.svg';
 import Navbar from './components/navbar';
 import Services from './components/services'
 import About from './components/about'
 import Contact from './components/contact'
 import PreviousWork from './components/previouswork'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 
 function App() {
   return (
-    <BrowserRouter>
-        <Navbar/>
-        <main>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="services" element={<Services />} />
-            <Route path="home" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="previouswork" element={<PreviousWork />} />
-          </Routes>
-        </main>
-    </BrowserRouter>
+    <div className="App">
+      <Navbar />
+      <main>
+        <section id="home">
+          <Home />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <section id="previouswork">
+          <PreviousWork />
+        </section>
+      </main>
+    </div>
   );
 }
 

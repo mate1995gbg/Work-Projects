@@ -35,7 +35,7 @@
 
 .navbar-link-style {
   color:#8080ff;
-  font-family: 'Segoe UI';
+  font-family: "Work Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;;
   font-size: 1.2rem; 
   text-decoration: none;
   transition: text-shadow 0.3s ease; 
@@ -58,6 +58,37 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   
 }
+
+.svg-triangles {
+  --dark-color: #8080FF;
+  --light-color: #53C0C0;
+  cursor: pointer;
+}
+#dark1, #light1, #dark2 {
+  transition: all 1s ease;
+}
+#dark2 {
+  transform: translateX(-100%);
+}
+
+svg:hover #light1 {
+  transform: translateX(20%);
+}
+svg:hover #dark1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+svg:hover #dark2 {
+  transform: translateX(0%);
+}
+
+#darkGroup {
+  fill: var(--dark-color);
+}
+#lightGroup {
+  fill: var(--light-color);
+}
+
 .link-div {
   margin: 5vh;
 }

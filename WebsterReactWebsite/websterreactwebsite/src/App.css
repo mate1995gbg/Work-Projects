@@ -242,6 +242,10 @@ svg:hover #dark2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.member:hover {
+  background-color: #40407f; /* Change background color on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+} 
 h2 {
   margin-top: 0;
 }

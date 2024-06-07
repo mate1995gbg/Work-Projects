@@ -2,7 +2,7 @@ import '../App.css';
 function About() {
     return (
         <header className="App-header">
-            <h2 className="introbody-text">About Here</h2>
+            <h2 className="introbody-text">About Us</h2>
             <div className="about-us">
             <div className="member">
                 <h2>Marco Teran</h2>

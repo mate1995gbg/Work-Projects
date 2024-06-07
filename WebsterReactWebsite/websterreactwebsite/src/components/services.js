@@ -3,7 +3,7 @@ function Services() {
     return (
         <header className="App-header">
             <div className="service-header">
-                <p className="service-header-text">We can help you with your IT Project, from idea to finished product</p>
+                <p className="service-header-text">We can help you with your IT Project -- from <span className="highlight-cyan">idea</span> to <span className="highlight-magenta">finished product</span></p>
             </div>
             <div className="service-main-div">
                 <div className="service-div">

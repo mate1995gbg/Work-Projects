@@ -13,7 +13,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 40s alternate;
   }
 }
 
@@ -27,10 +27,20 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-header-home {
+  background-color: #282c34;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 .App-navbar {
   width: 100%;
-  height: 10vh; 
+  height: 5vh; 
   background-color: #16181c;
   display: flex;
   align-items: center;
@@ -58,7 +68,6 @@ body {
   
 }
 .navbar-link-style:hover {
-  color:#8080ff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   
 }
@@ -176,7 +185,7 @@ svg:hover #dark2 {
 }
 .service-header-text {
   font-family: 'Orbitron', sans-serif;
-  font-size: xx-large;
+  font-size: large;
 }
 .service-text {
   font-family: 'Orbitron', sans-serif;
@@ -184,7 +193,7 @@ svg:hover #dark2 {
 }
 .service-header {
   width: 100%;
-  height: 10vh; 
+  height: 5vh; 
   background-color: #16181c;
   display: flex;
   align-items: center;
@@ -192,4 +201,28 @@ svg:hover #dark2 {
 }
 .hidden-spacer {
   margin-top: 15vh;
+}
+
+.highlight-cyan {
+  color: #53C0C0;
+}
+.highlight-magenta {
+  color: #8080FF;
+}
+.home-welcome-container {
+  display: flex;
+  width: 40vh;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 100vh;
+  text-align: left;
+}
+
+.home-intro-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: large;
+}
+.home-intro-emailtext {
+  font-family: 'Orbitron', sans-serif;
+  font-size: medium;
 }

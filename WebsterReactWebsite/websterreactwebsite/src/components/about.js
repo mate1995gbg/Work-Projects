@@ -19,7 +19,7 @@ function About() {
                 <img src={omarMuminovicImage}  className="profile-pic" />
                 <h2>Omar Muminovic</h2>
                 <p>Product Manager</p>
-                <p>Jane has been leading product teams for 8 years, specializing in agile methodologies and user experience...</p>
+                <p>Omar has been leading product teams for 8 years, specializing in agile methodologies and user experience...</p>
             </div>
     </div>
 	

@@ -3,11 +3,16 @@ import logo from '../svg/logo.svg';
 function Home() {
     return (
       <div className="App">
-        <header className="App-header-home">
+        <header className="App-header-home"> 
           <div className="home-welcome-container">
-            <p>Hello! We're a small freelancing development studio of two, based in Gothenburg, Sweden.</p>
-            <p className="home-intro-emailtext">We're available for new projects</p>
-            <p className="home-intro-emailtext">hello@websterdevelopment.se</p>
+            <p className='home-intro-text'>Hello! <br></br><br></br>We're a small freelancing <br></br>development studio of two,<br></br>
+             based in Gothenburg, Sweden.</p>
+            <p className="home-intro-emailtext"><br></br>We're available for new projects :</p>
+            <div className="home-email-container">
+              <span class="material-symbols-outlined">send
+              </span>
+              <p className="home-intro-emailtext">hello@websterdevelopment.se</p>
+            </div>
           </div>
           <img src={logo} className="App-logo" alt="logo" />
           <svg width="100" height="120" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" className='svg-triangles'>

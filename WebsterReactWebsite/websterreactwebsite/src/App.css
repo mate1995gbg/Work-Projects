@@ -13,7 +13,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 40s alternate;
+    animation: App-logo-spin infinite 40s linear;
   }
 }
 
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -210,21 +210,28 @@ svg:hover #dark2 {
   color: #8080FF;
 }
 .home-welcome-container {
+  background-color: #16181c;
   display: flex;
-  width: 40vh;
+  width: fit-content;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 100vh;
   text-align: left;
+  padding: 2%;
 }
-
+.home-email-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  gap: 4px;
+}
 .home-intro-text {
   font-family: 'Orbitron', sans-serif;
-  font-size: large;
+  font-size: xx-large;
 }
 .home-intro-emailtext {
   font-family: 'Orbitron', sans-serif;
-  font-size: medium;
+  font-size: large;
 }
 
 .about-us {

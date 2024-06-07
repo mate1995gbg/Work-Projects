@@ -12,7 +12,7 @@ function About() {
             <div className="member">
                 <h2>Omar Muminovic</h2>
                 <p>Product Manager</p>
-                <p>Marco has been leading product teams for 8 years, specializing in agile methodologies and user experience...</p>
+                <p>Omar has been leading product teams for 8 years, specializing in agile methodologies and user experience...</p>
             </div>
             </div>
         </header>

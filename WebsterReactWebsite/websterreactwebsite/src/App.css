@@ -240,12 +240,21 @@ svg:hover #dark2 {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-align: center;
 }
 
 .member:hover {
-  background-color: #40407f; /* Change background color on hover */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  background-color: #40407f; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
 } 
+
+.profile-pic {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%;
+  margin-bottom: 10px; 
+}
 h2 {
   margin-top: 0;
 }

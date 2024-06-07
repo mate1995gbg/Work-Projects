@@ -226,3 +226,36 @@ svg:hover #dark2 {
   font-family: 'Orbitron', sans-serif;
   font-size: medium;
 }
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.member {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+  }
+
+  .member {
+    margin: 10px 0;
+  }
+}

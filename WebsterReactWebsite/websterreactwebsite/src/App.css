@@ -31,14 +31,14 @@ body {
 .App-navbar {
   width: 100%;
   height: 10vh; 
-  background-color: #282c34;
+  background-color: #16181c;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .navbar-link-style {
-  color:#8080ff;
+  color: white;
   /* font-family: "Work Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;; */
   font-size: 1.2rem; 
   text-decoration: none;
@@ -46,11 +46,11 @@ body {
 
 }
 .navbar-link-style:link {
-  color:#8080ff;
+  color:white;
   
 }
 .navbar-link-style:visited {
-  color:#8080ff;
+  color:white;
   
 }
 .navbar-link-style:active {
@@ -67,6 +67,7 @@ body {
   --dark-color: #8080FF;
   --light-color: #53C0C0;
   cursor: pointer;
+  margin-top: 10vh;
 }
 #dark1, #light1, #dark2 {
   transition: all 1s ease;
@@ -144,4 +145,51 @@ svg:hover #dark2 {
   margin:auto;
   margin-top: 20px;
   padding: 2%;
+}
+
+.service-main-div {
+  display:flex;
+  flex-direction: row;
+  background-color:  #282c34;
+  width: 90%;
+  margin-top: 10vh;
+  height: fit-content;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.service-div {
+  background-color:#282c34;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+.service-div:hover {
+  background-color:#282c34;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(128, 128, 255, 0.5);
+}
+.service-header-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: xx-large;
+}
+.service-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: medium;
+}
+.service-header {
+  width: 100%;
+  height: 10vh; 
+  background-color: #16181c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden-spacer {
+  margin-top: 15vh;
 }

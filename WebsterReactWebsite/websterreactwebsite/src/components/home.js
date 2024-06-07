@@ -4,6 +4,8 @@ function Home() {
     return (
       <div className="App">
         <header className="App-header">
+          <div className='hidden-spacer'>
+          </div>
           <img src={logo} className="App-logo" alt="logo" />
           <p>Webster Systems Development</p>
           <a

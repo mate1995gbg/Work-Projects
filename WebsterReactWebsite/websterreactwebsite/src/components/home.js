@@ -14,6 +14,9 @@ function Home() {
               <p className="home-intro-emailtext">hello@websterdevelopment.se</p>
             </div>
           </div>
+            <img src={logo} className="App-logo"/>
+        </header>
+        <div className='App-header-home-lowerpart'>
           <svg width="100" height="120" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" className='svg-triangles'>
             <g id="triangles" clip-path="url(#clip0_1_2)">
             <g id="lightGroup">
@@ -29,9 +32,8 @@ function Home() {
             <rect width="120" height="100" fill="white" transform="matrix(0 1 -1 0 100 0)"/>
             </clipPath>
             </defs>
-            </svg>
-            <img src={logo} className="App-logo"/>
-        </header>
+          </svg>
+        </div>
       </div>
     );
   }

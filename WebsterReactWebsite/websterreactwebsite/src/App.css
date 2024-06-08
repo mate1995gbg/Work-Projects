@@ -20,7 +20,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin alternate infinite 80s linear;
+    animation: App-logo-spin alternate infinite 120s linear;
   }
 }
 
@@ -44,7 +44,7 @@ body {
 }
 .App-header-home {
   background-color: #282c34;
-  min-height: 90vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -52,6 +52,13 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
   overflow: hidden;
+}
+.App-header-home-lowerpart {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-navbar {
@@ -97,6 +104,7 @@ body {
   cursor: pointer;
   margin-top: 10vh;
   z-index: 2;
+  animation: svgpulse 2s infinite;
 }
 #dark1, #light1, #dark2 {
   transition: all 1s ease;
@@ -114,6 +122,19 @@ svg:hover #dark1 {
 }
 svg:hover #dark2 {
   transform: translateY(0%);
+}
+@keyframes svgpulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
 }
 
 #darkGroup {
@@ -244,6 +265,7 @@ svg:hover #dark2 {
 .home-intro-emailtext {
   font-family: 'Orbitron', sans-serif;
   font-size: large;
+  color: white;
 }
 
 .about-us {

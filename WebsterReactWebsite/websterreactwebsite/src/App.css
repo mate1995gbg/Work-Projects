@@ -21,6 +21,7 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin alternate infinite 120s linear;
+
   }
 }
 
@@ -59,6 +60,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.App-header-services {
+  background-color: #282c34;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-navbar {

@@ -6,7 +6,7 @@ function Home() {
         <header className="App-header-home"> 
           <div className="home-welcome-container">
             <p className='home-intro-text'>Hello! <br></br><br></br>We're a small freelancing <br></br>development studio of two,<br></br>
-             based in Gothenburg, Sweden.</p>
+             based in Gothenburg, Sweden .</p>
             <p className="home-intro-emailtext"><br></br>We're available for new projects :</p>
             <div className="home-email-container">
               <span class="material-symbols-outlined">send

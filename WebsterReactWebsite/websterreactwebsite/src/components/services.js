@@ -28,23 +28,27 @@ function Services() {
     return (
         <header className="App-header-services">
             <div className="service-header">
-                <p className="service-header-text">We can help you with your IT Project -- from <span className="highlight-cyan">idea</span> to <span className="highlight-magenta">finished product</span></p>
+                <p className="service-header-text">We can help you with your IT Project -- from <span className="highlight-cyan">idea</span> to <span className="highlight-magenta">finished product</span> .</p>
             </div>
             <div className="service-main-div">
                 <div className="service-div" data-detail="Website details" onMouseOver={(e) => handleMouseOver(e, 'Website details')} onMouseOut={handleMouseOut}>
                     <p className='service-text'>Websites</p>
                 </div>
+                <div className="service-trace"></div>
                 <div className="service-div" data-detail="App details" onMouseOver={(e) => handleMouseOver(e, 'App details')} onMouseOut={handleMouseOut}>
                     <p className='service-text'>Mobile Apps</p>
                 </div>
+                <div className="service-trace"></div>
                 <div className="service-div" data-detail="API details" onMouseOver={(e) => handleMouseOver(e, 'API details')} onMouseOut={handleMouseOut}>
                     <p className="service-text">API:s</p>
                 </div>
+                <div className="service-trace"></div>
                 <div className="service-div" data-detail="Database details" onMouseOver={(e) => handleMouseOver(e, 'Database details')} onMouseOut={handleMouseOut}>
                     <p className="service-text">Databases</p>
                 </div>
-                <div class="service-detail" style={detailStyle}>{detailText}</div>
+                <div className="service-trace"></div>
             </div>
+            <div className="service-detail" style={detailStyle}>{detailText}</div>
         </header>
     );
   }

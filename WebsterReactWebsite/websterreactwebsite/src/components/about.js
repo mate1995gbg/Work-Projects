@@ -11,7 +11,7 @@ function About() {
             
             <section className="mission">
                 <h2 className="section-title">Our Mission</h2>
-                <p>To innovate and lead in our industry, ensuring the highest levels of customer satisfaction and contributing to a sustainable future.</p>
+                <p>To ensure the highest levels of customer satisfaction and contributing to a sustainable future.</p>
             </section>
 
             <div className="about-us">

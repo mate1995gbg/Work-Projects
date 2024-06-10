@@ -40,7 +40,8 @@ function Services() {
 
         const verticalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .vertical-trace`);
         const horizontalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .horizontal-trace`);
-        if (verticalTrace && horizontalTrace) {
+        const serviceTrace = document.querySelector(`.service-trace[data-for="${detail}"]`);
+        if (verticalTrace && horizontalTrace && serviceTrace) {
             if (isAbove) {
                 verticalTrace.style.height = '2vh'; // Adjust to desired height of trace
             } else {
@@ -50,6 +51,7 @@ function Services() {
                 horizontalTrace.style.right = isLeft ? 'auto' : '0';
                 horizontalTrace.style.transform = 'none';
             }
+            serviceTrace.classList.remove('delay-vertical-trace');
         }
     };
 
@@ -61,10 +63,14 @@ function Services() {
 
         const verticalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .vertical-trace`);
         const horizontalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .horizontal-trace`);
-        if (verticalTrace && horizontalTrace) {
+        const serviceTrace = document.querySelector(`.service-trace[data-for="${detail}"]`);
+        if (verticalTrace && horizontalTrace && serviceTrace) {
             verticalTrace.style.height = '0';
             horizontalTrace.style.width = '0';
+            // Add the delay class
+            serviceTrace.classList.add('delay-vertical-trace');
         }
+        
     };
 
     return (

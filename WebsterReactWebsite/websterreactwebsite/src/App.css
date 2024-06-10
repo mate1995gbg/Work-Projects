@@ -260,6 +260,9 @@ svg:hover #dark2 {
   background-color: white;
   transition: height 0.3s ease;
 }
+.delay-vertical-trace .vertical-trace {
+  transition-delay: 0.6s;
+}
 
 .horizontal-trace {
   width: 0;

@@ -76,10 +76,9 @@ function Services() {
     return (
         <header className="App-header-services">
             <div className="service-header">
-                <p className="service-header-text">Som utbildad systemutvecklare så arbetar jag med IT-lösningar från <span className="highlight-cyan">idé</span> till <span className="highlight-magenta">färdig produkt</span> .</p>
+                <p className="service-header-text">We can help you with your IT Project -- from <span className="highlight-cyan">idea</span> to <span className="highlight-magenta">finished product</span> .</p>
             </div>
             <div className="service-main-div">
-<<<<<<< Updated upstream
                 <div className="service-div" data-detail="Website details" onMouseOver={(e) => handleMouseOver(e, 'Website details')} onMouseOut={() => handleMouseOut('Website details')}>
                     <p className='service-text'>Websites</p>
                 </div>
@@ -91,19 +90,6 @@ function Services() {
                 </div>
                 <div className="service-div" data-detail="Database details" onMouseOver={(e) => handleMouseOver(e, 'Database details')} onMouseOut={() => handleMouseOut('Database details')}>
                     <p className="service-text">Databases</p>
-=======
-                <div className="service-div" data-detail="Websites" onMouseOver={(e) => handleMouseOver(e, serviceDetails.websites)} onMouseOut={() => handleMouseOut(serviceDetails.websites)}>
-                    <p className='service-text'>Webbutveckling</p>
-                </div>
-                <div className="service-div" data-detail="Mobile Apps" onMouseOver={(e) => handleMouseOver(e, serviceDetails.apps)} onMouseOut={() => handleMouseOut(serviceDetails.apps)}>
-                    <p className='service-text'>Apputveckling</p>
-                </div>
-                <div className="service-div" data-detail="APIs" onMouseOver={(e) => handleMouseOver(e, serviceDetails.apis)} onMouseOut={() => handleMouseOut(serviceDetails.apis)}>
-                    <p className="service-text">API:er</p>
-                </div>
-                <div className="service-div" data-detail="Databases" onMouseOver={(e) => handleMouseOver(e, serviceDetails.databases)} onMouseOut={() => handleMouseOut(serviceDetails.databases)}>
-                    <p className="service-text">Databaser</p>
->>>>>>> Stashed changes
                 </div>
 
             </div>

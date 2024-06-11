@@ -1,11 +1,11 @@
 import '../App.css';
 
 const marcoTeranImage = "https://i.imgur.com/tDH6Vjy.jpeg";
+const omarMuminovicImage = "https://i.imgur.com/Jq8ZGnj.jpeg";
 
 
 function About() {
     return (
-<<<<<<< Updated upstream
             <header className="App-header">
             <h2 className="introbody-text">About Us</h2>
             
@@ -41,24 +41,6 @@ function About() {
             </section>
             </header>
      );
-=======
-        <header className="App-header">
-            <div className="service-header">
-                <p className="service-header-text">About</p>
-            </div>
-            <div className="about-us">
-            <div className="member">
-                <img src={marcoTeranImage} className="profile-pic" />
-                <p>Marco Terán</p>
-                <p>Systems Developer</p>
-                <p>BSc in Informatics, University West</p>
-                <p>I'm a seasoned developer with 4 years <br></br>of experience in both full-stack development.</p>
-            </div>
-    </div>
-	
-        </header>
-    );
->>>>>>> Stashed changes
   }
   
   export default About;

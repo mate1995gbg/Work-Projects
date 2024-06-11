@@ -1,16 +1,16 @@
 
 import React, { useState } from 'react';
 import '../App.css';
-
+import logo from '../svg/logo.svg';
 function Services() {
-    const [detailText, setDetailText] = useState('');
+    const [detailData, setDetailData] = useState({});
     const [detailStyle, setDetailStyle] = useState({});
 
-    const handleMouseOver = (event, detail) => {
+    const handleMouseOver = (event, data) => {
         const serviceRect = event.target.getBoundingClientRect();
         const containerRect = event.target.parentElement.getBoundingClientRect();
 
-        setDetailText(detail);
+        setDetailData(data);
         setDetailStyle({
             top: `${serviceRect.bottom - containerRect.top + 10}px`,
             height: '12vh',
@@ -38,9 +38,9 @@ function Services() {
             isAbove = true;
         }
 
-        const verticalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .vertical-trace`);
-        const horizontalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .horizontal-trace`);
-        const serviceTrace = document.querySelector(`.service-trace[data-for="${detail}"]`);
+        const verticalTrace = document.querySelector(`.service-trace[data-for="${data.title}"] .vertical-trace`);
+        const horizontalTrace = document.querySelector(`.service-trace[data-for="${data.title}"] .horizontal-trace`);
+        const serviceTrace = document.querySelector(`.service-trace[data-for="${data.title}"]`);
         if (verticalTrace && horizontalTrace && serviceTrace) {
             if (isAbove) {
                 verticalTrace.style.height = '2vh'; // Adjust to desired height of trace
@@ -55,15 +55,15 @@ function Services() {
         }
     };
 
-    const handleMouseOut = (detail) => {
+    const handleMouseOut = (data) => {
         setDetailStyle({
             height: '0',
             opacity: '0'
         });
 
-        const verticalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .vertical-trace`);
-        const horizontalTrace = document.querySelector(`.service-trace[data-for="${detail}"] .horizontal-trace`);
-        const serviceTrace = document.querySelector(`.service-trace[data-for="${detail}"]`);
+        const verticalTrace = document.querySelector(`.service-trace[data-for="${data.title}"] .vertical-trace`);
+        const horizontalTrace = document.querySelector(`.service-trace[data-for="${data.title}"] .horizontal-trace`);
+        const serviceTrace = document.querySelector(`.service-trace[data-for="${data.title}"]`);
         if (verticalTrace && horizontalTrace && serviceTrace) {
             verticalTrace.style.height = '0';
             horizontalTrace.style.width = '0';
@@ -73,45 +73,83 @@ function Services() {
         
     };
 
+    const serviceDetails = {
+        websites: {
+            title: 'Websites',
+            description: 'We build responsive and modern websites, any way you like them.',
+            icon: <span class="material-symbols-outlined">language</span>,
+        },
+        apps: {
+            title: 'Mobile Apps',
+            description: 'We create mobile applications for both iOS and Android.',
+            icon: <span class="material-symbols-outlined">smartphone</span>,
+        },
+        apis: {
+            title: 'APIs',
+            description: 'We develop robust APIs for your applications.',
+            icon: <span class="material-symbols-outlined">api</span>,
+        },
+        databases: {
+            title: 'Databases',
+            description: 'We design and manage scalable databases.',
+            icon: <span class="material-symbols-outlined">database</span>,
+        },
+        hosting: {
+            title: 'Web Hosting',
+            description: 'We can provide hosting and maintenance for your website.',
+            icon: <span class="material-symbols-outlined">support_agent</span>,
+        }
+    };
+
     return (
         <header className="App-header-services">
             <div className="service-header">
                 <p className="service-header-text">We can help you with your IT Project -- from <span className="highlight-cyan">idea</span> to <span className="highlight-magenta">finished product</span> .</p>
             </div>
             <div className="service-main-div">
-                <div className="service-div" data-detail="Website details" onMouseOver={(e) => handleMouseOver(e, 'Website details')} onMouseOut={() => handleMouseOut('Website details')}>
+                <div className="service-div" data-detail="Websites" onMouseOver={(e) => handleMouseOver(e, serviceDetails.websites)} onMouseOut={() => handleMouseOut(serviceDetails.websites)}>
                     <p className='service-text'>Websites</p>
                 </div>
-                <div className="service-div" data-detail="App details" onMouseOver={(e) => handleMouseOver(e, 'App details')} onMouseOut={() => handleMouseOut('App details')}>
+                <div className="service-div" data-detail="Mobile Apps" onMouseOver={(e) => handleMouseOver(e, serviceDetails.apps)} onMouseOut={() => handleMouseOut(serviceDetails.apps)}>
                     <p className='service-text'>Mobile Apps</p>
                 </div>
-                <div className="service-div" data-detail="API details" onMouseOver={(e) => handleMouseOver(e, 'API details')} onMouseOut={() => handleMouseOut('API details')}>
+                <div className="service-div" data-detail="APIs" onMouseOver={(e) => handleMouseOver(e, serviceDetails.apis)} onMouseOut={() => handleMouseOut(serviceDetails.apis)}>
                     <p className="service-text">API:s</p>
                 </div>
-                <div className="service-div" data-detail="Database details" onMouseOver={(e) => handleMouseOver(e, 'Database details')} onMouseOut={() => handleMouseOut('Database details')}>
+                <div className="service-div" data-detail="Databases" onMouseOver={(e) => handleMouseOver(e, serviceDetails.databases)} onMouseOut={() => handleMouseOut(serviceDetails.databases)}>
                     <p className="service-text">Databases</p>
                 </div>
-
+                <div className="service-div" data-detail="Web Hosting" onMouseOver={(e) => handleMouseOver(e, serviceDetails.hosting)} onMouseOut={() => handleMouseOut(serviceDetails.hosting)}>
+                    <p className="service-text">Web Hosting</p>
+                </div>
             </div>
             <div className="service-trace-container">
-                <div className="service-trace" data-for="Website details">
+                <div className="service-trace" data-for="Websites">
                     <div className="vertical-trace"></div>
                     <div className="horizontal-trace horizontal-left"></div>
                 </div>
-                <div className="service-trace" data-for="App details">
+                <div className="service-trace" data-for="Mobile Apps">
                     <div className="vertical-trace"></div>
                     <div className="horizontal-trace horizontal-left"></div>
                 </div>
-                <div className="service-trace" data-for="API details">
+                <div className="service-trace" data-for="APIs">
                     <div className="vertical-trace"></div>
                     <div className="horizontal-trace horizontal-right"></div>
                 </div>
-                <div className="service-trace" data-for="Database details">
+                <div className="service-trace" data-for="Databases">
                     <div className="vertical-trace"></div>
                     <div className="horizontal-trace horizontal-right"></div>
                 </div>
+                <div className="service-trace" data-for="Web Hosting">
+                    <div className="vertical-trace"></div>
+                    <div className="horizontal-trace horizontal-right"></div>
+                </div>
+                {/* <img src={logo} className="App-logo"/> */}
             </div>
-            <div className="service-detail" style={detailStyle}>{detailText}</div>
+            <div className="service-detail" style={detailStyle}>
+                <p>{detailData.icon}</p>
+                <p>{detailData.description}</p>
+            </div>
         </header>
     );
   }

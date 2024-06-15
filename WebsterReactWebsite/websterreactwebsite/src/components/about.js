@@ -1,25 +1,42 @@
 import '../App.css';
-
+import github_logo from '../svg/github-142-svgrepo-com.svg';
+import linkedin_logo from '../svg/linkedin-round-svgrepo-com.svg';
 const marcoTeranImage = "https://i.imgur.com/tDH6Vjy.jpeg";
-const omarMuminovicImage = "https://i.imgur.com/Jq8ZGnj.jpeg";
 
 
 function About() {
     return (
-        <header className="App-header">
-            <div className="service-header">
-                <p className="service-header-text">About</p>
+        <header className="App-header-about">
+            <div className="about-profile-wrapper">
+                <div className="about-profile-container">
+                    <div className="profile-pic-div">
+                        <img src={marcoTeranImage} className="profile-pic" />
+                    </div>
+                    <div className="profile-text-div">
+                        <h3><span className="highlight-cyan">Marco Terán</span></h3>
+                        <h6><span className="highlight-magenta">Systemutvecklare</span></h6>
+                        <h6>BSc in Informatics, University West</h6>
+                    </div>
+                    <div className="profile-contact-wrapper">
+                        <div className="profile-contact-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                            <h6>+46729742375</h6>
+                        </div>
+                        <div className="profile-contact-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                            <h6>marcogbg@hotmail.com</h6>
+                        </div>
+                        <div className="profile-contact-div">
+                            <img src={github_logo} width={24}/>
+                            <h6>github.com/mate1995gbg</h6>
+                        </div>
+                        <div className="profile-contact-div">
+                            <img src={linkedin_logo} width={24}/>
+                            <h6>linkedin.com/in/mter95/</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="about-us">
-            <div className="member">
-                <img src={marcoTeranImage} className="profile-pic" />
-                <p>Marco Terán</p>
-                <p>Systems Developer</p>
-                <p>BSc in Informatics, University West</p>
-                <p>I'm a seasoned developer with 4 years <br></br>of experience in both full-stack development.</p>
-            </div>
-    </div>
-	
         </header>
     );
   }

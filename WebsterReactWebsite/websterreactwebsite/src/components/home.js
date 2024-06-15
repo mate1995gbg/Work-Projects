@@ -6,7 +6,7 @@ function Home() {
         <header className="App-header-home"> 
           <div className="home-welcome-container">
             <p className='home-intro-text'>Hejsan! <br></br><br></br>Mitt namn är <span className="highlight-cyan">Marco Terán</span>, <br></br>en <span className="highlight-magenta">Systemutvecklare</span>,<br></br>
-             baserad in Göteborg .</p>
+             baserad i Göteborg .</p>
             <p className="home-intro-emailtext"><br></br>Kontakta mig via:</p>
             <div className="home-email-container">
               <span class="material-symbols-outlined">send
